@@ -8,7 +8,9 @@ class Bomb extends React.Component {
         // to our Bomb component to determine what the 
         // starting count should be.
         super()
-
+        // we need to call super() in the constructor since
+        // we are inheriting from another class via 
+        // the extends keyword
         this.state = {
             secondsLeft: props.initialCount
         }
