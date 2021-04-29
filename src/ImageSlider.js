@@ -5,7 +5,9 @@ class ImageSlider extends React.Component {
    // state goes in the constructor because the constructor goes first.
     constructor() {
       super() 
-  
+      // we need to call super() in the constructor since
+      // we are inheriting from another class via
+      // the extends keyword
       this.state = {
         currentSlideIndex: 0
       }
